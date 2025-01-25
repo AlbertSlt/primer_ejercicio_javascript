@@ -12,19 +12,90 @@
     <link rel="stylesheet" href="../css/style.css">
 
 
-    <title>Explorar</title>
+    <title>Explorar Perfiles</title>
 </head>
 
 <body>
 
+    <header>
+        <!-- navbar bootstrap-->
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <span class="navbar-text d-flex align-items-center">
+                    <a href="../index.html" class="d-flex align-items-end">
+                        <p class="link-ppal"><img src="../images/corazon.jpg" class="imagen-sidebar2" alt="coracora">
+                            Si-Tas</p>
+                    </a>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-secondary m-2" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-secondary m-2" href="./pages/explorar.html">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-secondary m-2" href="./pages/mis-citas.html">Mis Citas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-secondary m-2" href="./pages/mensajes.html">Mensajes</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Fin navbar bootstrap-->
+
+    </header>
+    <main>
+        <div class="h1-index">
+            <h1>Si-Tas</h1>
+            <p>Elegí tu proximo contrincante</p>
+        </div>
+        <div>
+            <form class="opciones">
+                <div class="form">
+                    <div>
+                        <input type="radio" id="hombres" name="opcion" value="1">
+                        <label for="hombres">Hombres</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="mujeres" name="opcion" value="2">
+                        <label for="mujeres">Mujeres</label><br>
+                    </div>
+                    <div><input type="radio" id="sorprendeme" name="opcion" value="3">
+                        <label for="sorprendeme">Sorprendeme!</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <section class="container-cards">
+            <div class="card2">
+                <h3 id="nombre"></h3>
+                <img src="" alt="" id="imagen">
+                <p id="descripcion"></p>
+            </div>
+        </section>
+
+    </main>
 
 
 
 
-        <!-- Script bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+    <!-- Script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+
+    <!-- Script js propio-->
+    <script src="../js/explorar.js"></script>
 </body>
 
 </html>
